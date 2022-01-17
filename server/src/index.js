@@ -7,7 +7,9 @@ app.use(cors())
 
 
 const registerController = require('./controllers/register.controller')
+const loginController = require('./controllers/login.controller')
 app.use("/user", registerController)
+app.use("/user", loginController)
 
 
 

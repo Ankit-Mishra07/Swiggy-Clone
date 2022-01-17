@@ -7,7 +7,16 @@ const Register = require('../models/register.model')
 router.post('/register', async (req, res) => {
     try{
 
-        const register = await Register.create(req.body)
+        let register;
+
+         register = await Register.findOne({email : req.body.email})
+         
+         if(register) {
+           return res.status(401).send("Email is Already Exists")  
+         }
+
+
+         register = await Register.create(req.body)
         return res.status(200).send(register)
 
     }catch(e) {
