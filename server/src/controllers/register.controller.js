@@ -15,6 +15,17 @@ router.post('/register', async (req, res) => {
     }
 })
 
+router.get('/register', async (req, res) => {
+    try{
+
+        const register = await Register.find()
+        return res.status(200).send(register)
+
+    }catch(e) {
+        return res.status(500).json({status: "Failed", message: e.message})
+    }
+})
+
 router.get('/:id', async(req, res) => {
     try{
 
@@ -25,3 +36,7 @@ router.get('/:id', async(req, res) => {
         return res.status(500).json({status: "Failed", message: e.message})
     }
 })
+
+
+
+module.exports = router
