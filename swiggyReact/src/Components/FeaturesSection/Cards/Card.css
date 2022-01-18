@@ -1,0 +1,12 @@
+.feature>img{
+    width: 105px;
+}
+.feature>p{
+    font-size: 1em;
+    font-weight: 400;
+    color: #e0cbc1;
+}
+.feature>h2{
+    font-size: 1.2em;
+    font-weight: 550;
+}
