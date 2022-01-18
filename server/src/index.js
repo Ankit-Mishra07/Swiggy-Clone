@@ -1,18 +1,17 @@
-const express = require("express")
-const cors = require('cors')
-const app = express()
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import {Provider as ReduxProvider} from 'react-redux'
+import { store } from './Redux/store/store';
+ReactDOM.render(
+  <React.StrictMode>
+    <ReduxProvider store={store}>
 
-app.use(express.json())
-app.use(cors())
+    <App />
+    </ReduxProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 
-const registerController = require('./controllers/register.controller')
-const loginController = require('./controllers/login.controller')
-
-const productController = require('./controllers/product.controller')
-app.use("/user", registerController)
-app.use("/user", loginController)
-app.use('/products', productController)
-
-
-module.exports = app
