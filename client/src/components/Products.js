@@ -3,7 +3,7 @@ import style from '../Styles/products.module.css'
 import SideNav from './SideNav'
 const Products = () => {
 
-    
+
 
     return (
         <>
@@ -13,7 +13,7 @@ const Products = () => {
 
             </div>
             <div className={style.products_container_child}>
-
+                
             </div>
         </div>
             
