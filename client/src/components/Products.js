@@ -17,7 +17,6 @@ const Products = () => {
     const getProducts = async() => {
         let res = await fetch('http://localhost:5000/products')
         let data = await res.json()
-        console.log(data)
         dispatch(getAllProducts(data))
     }
 

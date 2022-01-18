@@ -25,6 +25,7 @@
 }
 .rest_navigation > div {
     padding: 20px;
+    cursor: pointer;
 }
 .to_top{
     color: #E46D47;

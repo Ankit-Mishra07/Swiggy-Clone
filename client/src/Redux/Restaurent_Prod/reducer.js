@@ -51,7 +51,7 @@ export const restReducer = (state=init, {type, payload}) => {
         case LOHI_UN :
             return {
                 relevance : false,
-                restProd : [],
+                restProd : payload,
                 deltime : false,
                 rating : false,
                 hilo : false,
