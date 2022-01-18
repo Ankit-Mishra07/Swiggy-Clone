@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllProducts } from '../Redux/Products/action'
 import style from '../Styles/products.module.css'
+import Premium from './Premium'
 import SideNav from './SideNav'
 import TopPicks from './TopPicks'
 import WhatsNew from './WhatsNew'
@@ -33,6 +34,7 @@ const Products = () => {
             <div>
                 <TopPicks />
                 <WhatsNew />
+                <Premium />
             </div>
         </div>
             
