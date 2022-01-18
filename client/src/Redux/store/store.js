@@ -1,9 +1,13 @@
 import {applyMiddleware, combineReducers, compose, createStore} from 'redux'
 import { productReducer } from '../Products/reducer'
+import { sidenavReducer } from '../ForSideNav/reducer'
 import thunk from 'redux-thunk'
+import { restReducer } from '../Restaurent_Prod/reducer'
 
 const rootReducer = combineReducers({
-    productState : productReducer
+    productState : productReducer,
+    sideNavState : sidenavReducer,
+    restProdState : restReducer
 })
 
 
