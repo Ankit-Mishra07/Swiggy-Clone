@@ -1,0 +1,11 @@
+.products_container {
+ 
+    width: 90%;
+    margin: auto;
+}
+
+.products_container_child{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    
+}
