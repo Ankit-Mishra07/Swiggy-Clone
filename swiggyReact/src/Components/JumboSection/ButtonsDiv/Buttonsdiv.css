@@ -1,0 +1,16 @@
+.btndiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login{
+    background-color: #ffffff;
+    padding: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1.1em;
+}
+.login:hover{
+    color: #fc8019;
+}

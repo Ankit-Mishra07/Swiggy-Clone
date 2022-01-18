@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+body {
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
