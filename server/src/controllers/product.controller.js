@@ -22,3 +22,7 @@ router.get('/', async(req, res) => {
         return res.status(500).json({status: "Failed", message: e.message})
     }
 })
+
+
+
+module.exports = router

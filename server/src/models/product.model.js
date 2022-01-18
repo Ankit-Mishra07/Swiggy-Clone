@@ -1,14 +1,16 @@
 const mongoose = require('mongoose')
 
 const productSchema = mongoose.Schema({
-    food_name : {type : String, required :true},
-    restaurent : {type : String, required : true},
+    name : {type : String, required :true},
+    rating : {type : Number, required : true},
     location : {type : String, required : false},
-    price : {type : String, required : true},
-    food_type : {type : String, required : true},
+    price : {type : Number, required : true},
+    veg : {type : Boolean, required : true},
+    best_seller : {type : Boolean, required : true},
     description : {type : String, required : true},
-    image : {type : String, required: true},
-    category : {type : String, required : true}
+    img_url : {type : String, required: true},
+    category : {type : String, required : true},
+    average_time : {type : Number, required : true}
 })
 
 module.exports = mongoose.model('product', productSchema)
