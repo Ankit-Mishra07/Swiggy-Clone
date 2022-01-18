@@ -8,7 +8,11 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
+
   },
   {
     "category": "Recommended",
@@ -20,7 +24,10 @@
     "best_seller": false,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "Recommended",
@@ -32,7 +39,10 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "Recommended",
@@ -44,7 +54,10 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "Recommended",
@@ -56,7 +69,10 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "Recommended",
@@ -68,7 +84,10 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "North Indian",
@@ -80,7 +99,10 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "North Indian",
@@ -92,7 +114,10 @@
     "best_seller": false,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "North Indian",
@@ -104,7 +129,10 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "South Indian",
@@ -116,7 +144,10 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "South Indian",
@@ -128,7 +159,10 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "South Indian",
@@ -140,7 +174,10 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "South Indian",
@@ -152,7 +189,10 @@
     "best_seller": true,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "South Indian",
@@ -164,7 +204,10 @@
     "best_seller": false,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : true,
+    "newly_added":false,
+    "exclusive" : false
   },
   {
     "category": "Indian Snacks",
@@ -176,7 +219,10 @@
     "best_seller": false,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : false,
+    "newly_added":true,
+    "exclusive" : false
   },
   {
     "category": "Indian Snacks",
@@ -188,7 +234,10 @@
     "best_seller": false,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : false,
+    "newly_added":true,
+    "exclusive" : false
   },
   {
     "category": "Indian Snacks",
@@ -200,7 +249,10 @@
     "best_seller": false,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : false,
+    "newly_added":true,
+    "exclusive" : false
   },
   {
     "category": "Indian Snacks",
@@ -212,7 +264,10 @@
     "best_seller": false,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : false,
+    "newly_added":true,
+    "exclusive" : false
   },
   {
     "category": "Indian Snacks",
@@ -224,5 +279,8 @@
     "best_seller": false,
     "rating": 4.3,
     "average_time": 28,
-    "location" : "mumbai"
+    "location" : "mumbai",
+    "top_pick" : false,
+    "newly_added":true,
+    "exclusive" : false
   }]
