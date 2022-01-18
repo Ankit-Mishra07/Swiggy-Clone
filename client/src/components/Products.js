@@ -5,6 +5,7 @@ import style from '../Styles/products.module.css'
 import Premium from './Premium'
 import SideNav from './SideNav'
 import TopPicks from './TopPicks'
+import Vegterians from './Vegterians'
 import WhatsNew from './WhatsNew'
 const Products = () => {
 
@@ -35,6 +36,7 @@ const Products = () => {
                 <TopPicks />
                 <WhatsNew />
                 <Premium />
+                <Vegterians />
             </div>
         </div>
             
