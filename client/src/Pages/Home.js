@@ -3,6 +3,7 @@ import Products from '../components/Products'
 import RestaurentProducts from '../components/RestaurentProducts'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllProducts } from '../Redux/Products/action'
+import { Navbar } from '../components/Navbar'
 const Home = () => {
     
     const {products} = useSelector(state => state.productState)
@@ -18,6 +19,7 @@ const Home = () => {
     },[])
     return (
         <>
+            <Navbar />
             <Products />
             <RestaurentProducts />
         </>
