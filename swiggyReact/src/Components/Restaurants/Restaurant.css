@@ -1,0 +1,12 @@
+.preview{
+    display: grid;
+    grid-template-columns: 45% 25% 25%;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 2rem; */
+}
+@media screen and (max-width:769px) {
+    .preview{
+        grid-template-columns: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+.Locatediv{
+    padding: 10px 2px;
+    border: 1px solid #93959f;
+    border-left: none;
+    cursor: pointer;
+
+}
+.locateme:hover{
+    
+    background-color: #e9e9eb;
+}
+.locateme{
+    margin: 0px;
+    padding: 10px 10px;
+    color: #535665;
+    font-size: 1em;
+
+}
+@media screen and (max-width: 573px) {
+    .Locatediv{
+        border: 1px solid #93959f;
+    }
+}

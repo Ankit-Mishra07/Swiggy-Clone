@@ -1,0 +1,17 @@
+.jumbodiv{
+    width: 100%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+@media screen and (max-width:955px) {
+    .jumbodiv{
+        grid-template-columns: 70% 30%;
+    }
+}
+@media screen and (max-width:769px) {
+    .jumbodiv{
+        grid-template-columns: 100%;
+    }
+}
