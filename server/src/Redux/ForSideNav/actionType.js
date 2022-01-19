@@ -1,5 +1,0 @@
-export const TOP_PICK = "TOP_PICK"
-export const VEGE = "VEGE"
-export const WHATSNEW = "WHATSNEW"
-export const PREMIUM = "PREMIUM"
-export const SEEALL = "SEEALL"
