@@ -20,6 +20,7 @@ const Home = () => {
     return (
         <>
             <Navbar />
+            
             <Products />
             <RestaurentProducts />
         </>

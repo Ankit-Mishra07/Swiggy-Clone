@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 .navbar{
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
-    padding: 2px 70px;
+    padding: 2px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    z-index: 999;
 }
 .left{
     display: flex;
+}
+.left img {
+    transition: transform 0.6s;
+    border-radius: 50%;
+}
+.left img:hover {
+    transform: scale(1.2);
 }
 .left > p,.right{
     font-weight: 600;
@@ -32,7 +45,7 @@ i{
 i:hover{
     color: coral;
 }
-span{
+.navbar span{
     margin-right: 65px;
     margin-left: 10px;
     cursor: pointer;
