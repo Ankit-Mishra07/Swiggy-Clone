@@ -20,12 +20,20 @@
     border-bottom: 1px solid lightgray;
 
 }
+.res_text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #282c3f;
+    margin-left: 10px;
+}
 .rest_navigation{
     display: flex;
 }
 .rest_navigation > div {
     padding: 20px;
     cursor: pointer;
+    color: #686b78;
+    
 }
 .to_top{
     color: #E46D47;

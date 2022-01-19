@@ -41,7 +41,7 @@ const RestaurentProducts = () => {
 
 
     return (
-        <div className={style.restaurent_prod_container}>
+        <div className={style.restaurent_prod_container} id='seeall'>
             <h1 className={style.all_restaurent_text}>↓ ALL RESTAURENT</h1>
 
             <div className={style.rest_container}>
@@ -50,7 +50,7 @@ const RestaurentProducts = () => {
                     <a className={style.to_top} href='#top_picks' onClick={() => {
                         dispatch(getTop_picks())
                     }}>═</a>
-                    <span>1590 Restaurents</span>
+                    <span className={style.res_text}>1590 Restaurents</span>
 
                 </div>
 
