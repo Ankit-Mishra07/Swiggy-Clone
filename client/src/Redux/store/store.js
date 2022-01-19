@@ -3,11 +3,13 @@ import { productReducer } from '../Products/reducer'
 import { sidenavReducer } from '../ForSideNav/reducer'
 import thunk from 'redux-thunk'
 import { restReducer } from '../Restaurent_Prod/reducer'
+import { cartReducer } from '../Cart/reducer'
 
 const rootReducer = combineReducers({
     productState : productReducer,
     sideNavState : sidenavReducer,
-    restProdState : restReducer
+    restProdState : restReducer,
+    cartState : cartReducer
 })
 
 
