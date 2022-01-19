@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import style from '../Styles/products.module.css'
+import { Link } from 'react-router-dom'
 
 const WhatsNew = () => {
 
@@ -17,6 +18,8 @@ const WhatsNew = () => {
         <div className={style.products_box}>
             {
                 whatsnew.map((e) => (
+                    <Link to={`/restaurent/${e._id}`} style={{color: "inherit", textDecoration:"none"}}>
+                    
                     <div className={style.productCard} key={e._id}>
                         <div>
                             <img src={e.img_url} alt="" />
@@ -35,6 +38,7 @@ const WhatsNew = () => {
                                 </div>
                         </div>
                     </div>
+                    </Link>
                 ))
             }
         </div>

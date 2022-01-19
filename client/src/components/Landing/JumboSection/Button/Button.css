@@ -1,0 +1,23 @@
+.blackbtn{
+    background-color: #000000;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.blackbtn:hover{
+    box-shadow: 0 2px 8px #d4d5d9;
+}
+.orangebtn{
+    padding: 20px 20px;
+    border: 1px solid #fc8019;
+    background-color: #fc8019;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}

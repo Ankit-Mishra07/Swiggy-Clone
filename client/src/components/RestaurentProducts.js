@@ -4,6 +4,8 @@ import {useDispatch, useSelector} from 'react-redux'
 import { getTop_picks } from '../Redux/ForSideNav/action'
 import style2 from '../Styles/products.module.css'
 import { getDelivery, getHighLow, getLowHigh, getRating, getRelevance } from '../Redux/Restaurent_Prod/action'
+import { Link } from 'react-router-dom'
+
 const RestaurentProducts = () => {
 
     const dispatch = useDispatch()
@@ -80,6 +82,8 @@ const RestaurentProducts = () => {
             <div className={style.rest_products_cont}>
                 {
                     restProd.map((e) => (
+                    <Link to={`/restaurent/${e._id}`} style={{color: "inherit", textDecoration:"none"}}>
+
                         <div className={style2.productCard} key={e._id}>
                         <div>
                             <img src={e.img_url} alt="" />
@@ -98,6 +102,7 @@ const RestaurentProducts = () => {
                             </div>
                         </div>
                     </div>
+                    </Link>
                     ))
                 }
             </div>

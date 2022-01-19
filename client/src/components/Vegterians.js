@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import style from '../Styles/products.module.css'
-
+import {Link} from 'react-router-dom'
 const Vegterians = () => {
     const { products } = useSelector(state => state.productState)
 
@@ -15,6 +15,7 @@ const Vegterians = () => {
         <div className={style.products_box}>
             {
                 premium.map((e) => (
+                    <Link to={`/restaurent/${e._id}`} style={{color: "inherit", textDecoration:"none"}}>
                     <div className={style.productCard} key={e._id}>
                         <div>
                             <img src={e.img_url} alt="" />
@@ -33,6 +34,7 @@ const Vegterians = () => {
                                 </div>
                         </div>
                     </div>
+                    </Link>
                 ))
             }
         </div>

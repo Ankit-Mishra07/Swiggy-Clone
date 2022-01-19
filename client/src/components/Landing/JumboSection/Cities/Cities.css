@@ -1,0 +1,17 @@
+.citiespara>a{
+    color: #686b78;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.citiespara>a:nth-child(2n){
+    color: #93959f;
+}
+.citiespara>a:nth-child(1){
+    margin: 0 0 5px 0 ;
+}
+.citiespara{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
