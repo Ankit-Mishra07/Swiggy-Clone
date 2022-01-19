@@ -10,9 +10,11 @@ const registerController = require('./controllers/register.controller')
 const loginController = require('./controllers/login.controller')
 
 const productController = require('./controllers/product.controller')
+const cartController = require('./controllers/cart.controller')
 app.use("/user", registerController)
 app.use("/user", loginController)
 app.use('/products', productController)
+app.use('/cart', cartController)
 
 
 module.exports = app

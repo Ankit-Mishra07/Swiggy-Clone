@@ -9,7 +9,7 @@ router.post('/login', async (req, res) => {
 
        let login = await Register.findOne({mobile : req.body.mobile})
         if(login) {
-            return res.status(200).send('200')
+            return res.status(200).send(login)
         }
         return res.status(401).send('User does not exists')
 
