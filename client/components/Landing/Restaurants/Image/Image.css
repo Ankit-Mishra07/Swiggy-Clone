@@ -1,0 +1,30 @@
+.headerswiggy{
+    filter: invert(58%) sepia(16%) saturate(5733%) hue-rotate(349deg) brightness(101%) contrast(98%);
+}
+.noncontentimg{
+    width: 100%;
+    max-height: 500px;
+}
+.headerswiggy{
+    width: 200px;
+}
+.ss1,.ss2{
+    width: 384px;
+}
+.googlePlay,.appStore{
+    height: 54px;
+}
+
+@media screen and (max-width:1025px) {
+    .ss1,.ss2{
+        width: 300px;
+    }
+}
+@media screen and (max-width:769px) {
+    .noncontentimg{
+        display: none;
+    }
+    .ss1,.ss2{
+        display: none;
+    }
+}

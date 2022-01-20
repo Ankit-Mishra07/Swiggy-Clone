@@ -1,0 +1,9 @@
+.animate-text>*{
+    font-size: 40px;
+    font-weight: 600;
+    color: #282c3f;
+    margin-bottom: 1px;
+}
+.animate-text{
+    margin-top: 80px;
+}
