@@ -1,0 +1,76 @@
+.login_Container{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 65%;
+    right: 0;
+    z-index: 1000;
+    padding: 50px;
+}
+
+.login_cut{
+    text-align: left;
+}
+.login_cut > button {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: grey;
+}
+
+.login_create{
+    text-align: left;
+
+}
+
+
+.login_create > h1{
+    margin-bottom: 5px;
+}
+.login_create > p >span {
+    color: #FC8019;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.login_create > div {
+    font-weight: bold;
+    
+}
+
+.login_input{
+    text-align: left;
+    margin-top: 20px;
+}
+.login_input > input {
+    border: 1px solid lightgray;
+    padding: 18px 15px;
+    font-size: 20px;
+    outline: none;
+    width: 80%;
+}
+.login_btn {
+    text-align: left;
+}
+.login_btn > button {
+    width: 88%;
+    font-size: 20px;
+    padding: 10px 15px;
+    outline: none;
+    margin-top: 10px;
+    background-color: #FC8019;
+    color: #fff;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+.login_btn >p{
+    font-size: 12px;
+    color: gray;
+    margin-top: 2px;
+}

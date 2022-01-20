@@ -4,12 +4,14 @@ import { Navbar } from '../components/Navbar';
 import ProductClicked from '../components/ProductClicked';
 import style from '../Styles/productDetail.module.css'
 import {useSelector, useDispatch} from 'react-redux'
+import { addToCart } from '../Redux/Cart/action';
+import { subTotal } from '../Redux/Total/action';
 const ProductDetail = () => {
   const {id} = useParams()
   const [data, setData]= useState({})
   const [lists, setLists] = useState([])
   const [veg , setVeg] = useState(false)
-
+  const dispatch = useDispatch()
   const {cart} = useSelector(state => state.cartState)
 
   const getData = async() => {
@@ -32,9 +34,12 @@ const ProductDetail = () => {
       getData()
   },[])
 
+
+
+  const {userData} = useSelector(state => state.userState)
+  const {total} = useSelector(state => state.totalState)
+
   
-
-
 const handlevege = () =>  {
     let updated =  lists.filter((e) => {
       return e.veg === true
@@ -44,7 +49,45 @@ const handlevege = () =>  {
     setVeg(true)
 }
 
+
+
+const AddtoCart = (e) => {
+  delete e._id
+  e["user"] = userData[0]._id
+  fetch('http://localhost:5000/cart', {
+    method : 'POST',
+    body : JSON.stringify(e),
+    headers : {
+      'Content-Type' : 'application/json'
+    }
+  }).then(res => res.json())
+  .then(res => {
+    console.log(res)
+    dispatch(subTotal(e.price))
+  })
+  // console.log(e)
+  getCartData()
+}
+
+
+
+  const getCartData = async () => {
+    let res = await fetch('http://localhost:5000/cart')
+    let dat = await res.json()
+    // dat.map((e) => (
+    //   dispatch(subTotal(e.price))
+    // ))
+    dispatch(addToCart(dat))
+  }
+
+  useEffect(() => {
+    getCartData()
+  
+  },[])
+
+
   return <>
+
 
     <Navbar />
 
@@ -80,6 +123,7 @@ const handlevege = () =>  {
 
             {
               lists.map((e) => (
+                
                 <div className={style.products_list_data}>
                   <div className={style.product_list_text}>
                     <div><i class="far fa-stop-circle" style={{color : e.veg ? "#4D9374" : "#8C614C"}}></i></div>
@@ -89,11 +133,14 @@ const handlevege = () =>  {
                   </div>
                   <div>
                     <img src={e.img_url} alt="" />
-                    <button>ADD</button>
+                    <button className={style.addtoCart} onClick={() => AddtoCart(e)}>ADD</button>
                   </div>
                 </div>
               ))
             }
+
+
+
 
 
             </div>
@@ -102,7 +149,30 @@ const handlevege = () =>  {
         
 
         
-        <div></div>
+        <div className={style.cart_container}>
+              <div>
+                <h1>Cart</h1>
+                <p><span>({cart.length})</span>ITEMS</p>
+              </div>
+              <div>
+                {
+                  cart.map((e) => (
+                    <div key={e._id} className={style.cart__card}>
+
+                      <span><i class="far fa-stop-circle" style={{color : e.veg ? "#4D9374" : "#8C614C"}}></i></span>
+                      <span>{e.name}</span>
+                      <span>₹{e.price}</span>
+                    </div>
+                  ))
+                }
+              </div>
+              <div className={style.total_box}>
+                <h3>Subtotal</h3>
+                <h3>₹{total}</h3>
+              </div>
+        </div>
+
+
 
 
     </div>
