@@ -3,14 +3,18 @@ import '../ButtonsDiv/Buttonsdiv.css'
 import Button from '../Button/Button'
 import { useDispatch, useSelector } from 'react-redux'
 import { showLogin } from '../../../../Redux/ForLogin/action'
+import { showSignup } from '../../../../Redux/ForSignup/action'
 
 export default function Buttonsdiv() {
 
     const dispatch = useDispatch()
+    const {showsign} = useSelector(state => state.showSignState)
+
     const {show} = useSelector(state => state.showLogState)
 
     const showLoginSide = () => {
         dispatch(showLogin(!show))
+        dispatch(showSignup(false))
     }
 
     return (
