@@ -3,7 +3,7 @@ const express = require('express')
 const router = express.Router()
 const Register = require('../models/register.model')
 
-router.post('/login', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
 
 
@@ -11,7 +11,7 @@ router.post('/login', async (req, res) => {
         if(login) {
             return res.status(200).send(login)
         }
-        return res.status(401).send('User does not exists')
+        return res.status(200).send({msg : 'User does not exists'})
 
     }catch(e) {
         return res.status(500).json({status: "Failed", message: e.message})
