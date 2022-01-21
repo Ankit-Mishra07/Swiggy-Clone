@@ -189,7 +189,15 @@
     color: #171A29;
 }
 
-
+.checkOutBox > button{
+    background-color: #60B246;
+    color: #fff;
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 600;
+}
 
 
 

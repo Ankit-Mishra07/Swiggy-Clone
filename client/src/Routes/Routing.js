@@ -4,11 +4,17 @@ import ProductDetail from '../Pages/ProductDetail';
 import {Routes, Route} from 'react-router-dom'
 import Landing from '../Pages/Landing';
 import PrivateRoute from './PrivateRoute';
+import OpenRoutes from './OpenRoutes';
 const Routing = () => {
   return <>
 
   <Routes>
-      <Route path="/" element={<Landing />}></Route>
+      <Route path="/" element={
+        <OpenRoutes>
+          <Landing />
+
+        </OpenRoutes>
+      }></Route>
       <Route path="/restaurent" element={
       <PrivateRoute>
         

@@ -28,7 +28,7 @@ const ProductDetail = () => {
   }
   useEffect(() => {
     getByCat() 
-},[])
+},[lists])
   
   useEffect(() => {
       getData()
@@ -63,10 +63,10 @@ const AddtoCart = (e) => {
   }).then(res => res.json())
   .then(res => {
     console.log(res)
-    dispatch(subTotal(e.price))
+    // dispatch(subTotal(e.price))
   })
   // console.log(e)
-  getCartData()
+  // getCartData()
 }
 
 
@@ -74,9 +74,9 @@ const AddtoCart = (e) => {
   const getCartData = async () => {
     let res = await fetch('http://localhost:5000/cart')
     let dat = await res.json()
-    // dat.map((e) => (
-    //   dispatch(subTotal(e.price))
-    // ))
+    dat.map((e) => (
+     dispatch(subTotal(e.price))
+    ))
     dispatch(addToCart(dat))
   }
 
@@ -162,7 +162,10 @@ const AddtoCart = (e) => {
                       <span><i class="far fa-stop-circle" style={{color : e.veg ? "#4D9374" : "#8C614C"}}></i></span>
                       <span>{e.name}</span>
                       <span>₹{e.price}</span>
+                 
                     </div>
+
+               
                   ))
                 }
               </div>
@@ -170,6 +173,10 @@ const AddtoCart = (e) => {
                 <h3>Subtotal</h3>
                 <h3>₹{total}</h3>
               </div>
+              <div className={style.checkOutBox}>
+                <button>CHECKOUT</button>
+              </div>
+
         </div>
 
 
