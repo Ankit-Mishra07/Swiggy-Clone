@@ -25,4 +25,15 @@ router.get("/", async (req, res) => {
         return res.status(500).json({status: "Failed", message: e.message})
     }
 })
+
+router.delete("/:id", async (req, res) => {
+    try {
+
+        const cart = await Cart.findByIdAndDelete(req.params.id)
+        return res.status(200).send(cart)
+
+    }catch(e) {
+        return res.status(500).json({status: "Failed", message: e.message})
+    }
+})
 module.exports = router
