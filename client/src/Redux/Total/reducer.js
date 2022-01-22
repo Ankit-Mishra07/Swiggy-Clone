@@ -1,26 +1,18 @@
+import { GetData, saveData } from "../utils/localstorage";
 import { TOTAL } from "./actionType";
 
 const init = {
-    total : 0
+    total : GetData('swiggyTotal') || [0]
 }
 
-export const totalReducer = (state = init , {type, payload}) => {
+export const SubTotalReducer = (state = init , {type, payload}) => {
     switch(type) {
         case TOTAL : 
+            saveData('swiggyTotal', [Number(state.total)+ Number(payload)])
             return {
-                total : state.total + payload
+                total : [Number(state.total) + Number(payload)]
             }
         default :
         return state
     }
 }
-
-
-
-
-
-
-
-
-
-

@@ -5,6 +5,7 @@ import {Routes, Route} from 'react-router-dom'
 import Landing from '../Pages/Landing';
 import PrivateRoute from './PrivateRoute';
 import OpenRoutes from './OpenRoutes';
+import Checkout from '../Pages/Checkout';
 const Routing = () => {
   return <>
 
@@ -29,6 +30,8 @@ const Routing = () => {
       </PrivateRoute>
       
       }></Route>
+
+      <Route path="/checkout" element={<Checkout />}></Route>
   </Routes>
 
   </>;

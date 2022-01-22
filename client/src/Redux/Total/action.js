@@ -6,7 +6,3 @@ export const subTotal = (data) => {
         payload : data
     }
 }
-
-
-
-

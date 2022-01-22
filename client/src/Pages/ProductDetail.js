@@ -6,19 +6,22 @@ import style from '../Styles/productDetail.module.css'
 import {useSelector, useDispatch} from 'react-redux'
 import { addToCart } from '../Redux/Cart/action';
 import { subTotal } from '../Redux/Total/action';
+import { Link } from 'react-router-dom';
 const ProductDetail = () => {
   const {id} = useParams()
   const [data, setData]= useState({})
   const [lists, setLists] = useState([])
   const [veg , setVeg] = useState(false)
-  const dispatch = useDispatch()
   const {cart} = useSelector(state => state.cartState)
+  const dispatch = useDispatch()
+
 
   const getData = async() => {
     let res = await fetch(`http://localhost:5000/products/${id}`)
     let dat = await res.json()
     setData(dat)
   }
+  
   
   const getByCat = async () => {
     let res = await fetch(`http://localhost:5000/products/?category=${data.category}`)
@@ -28,7 +31,7 @@ const ProductDetail = () => {
   }
   useEffect(() => {
     getByCat() 
-},[lists])
+},[])
   
   useEffect(() => {
       getData()
@@ -36,9 +39,11 @@ const ProductDetail = () => {
 
 
 
-  const {userData} = useSelector(state => state.userState)
-  const {total} = useSelector(state => state.totalState)
+  
 
+
+  const {userData} = useSelector(state => state.userState)
+  const {total} = useSelector(state => state.subTotalState)
   
 const handlevege = () =>  {
     let updated =  lists.filter((e) => {
@@ -50,9 +55,8 @@ const handlevege = () =>  {
 }
 
 
-
 const AddtoCart = (e) => {
-  delete e._id
+  delete e._id;
   e["user"] = userData[0]._id
   fetch('http://localhost:5000/cart', {
     method : 'POST',
@@ -62,31 +66,33 @@ const AddtoCart = (e) => {
     }
   }).then(res => res.json())
   .then(res => {
-    console.log(res)
-    // dispatch(subTotal(e.price))
+    console.log("res",res)
+    dispatch(subTotal(Number(res.price)))
+
+    getCartData()
   })
-  // console.log(e)
-  // getCartData()
+  console.log(e)
 }
 
 
 
-  const getCartData = async () => {
-    let res = await fetch('http://localhost:5000/cart')
-    let dat = await res.json()
-    dat.map((e) => (
-     dispatch(subTotal(e.price))
-    ))
-    dispatch(addToCart(dat))
-  }
+const getCartData = async () => {
+  let res = await fetch('http://localhost:5000/cart')
+  let dat = await res.json()
+  let userCart = dat.filter((e) => {
+    return userData[0]._id === e.user
+  })
 
-  useEffect(() => {
-    getCartData()
-  
-  },[])
+
+  dispatch(addToCart(userCart))
+}
+useEffect(() => {
+  getCartData()
+},[])
 
 
   return <>
+
 
 
     <Navbar />
@@ -123,7 +129,6 @@ const AddtoCart = (e) => {
 
             {
               lists.map((e) => (
-                
                 <div className={style.products_list_data}>
                   <div className={style.product_list_text}>
                     <div><i class="far fa-stop-circle" style={{color : e.veg ? "#4D9374" : "#8C614C"}}></i></div>
@@ -171,14 +176,13 @@ const AddtoCart = (e) => {
               </div>
               <div className={style.total_box}>
                 <h3>Subtotal</h3>
-                <h3>₹{total}</h3>
+                <h3>₹{total[total.length-1]}</h3>
               </div>
               <div className={style.checkOutBox}>
-                <button>CHECKOUT</button>
+                <Link to="/checkout"><button>CHECKOUT</button></Link>
               </div>
 
         </div>
-
 
 
 

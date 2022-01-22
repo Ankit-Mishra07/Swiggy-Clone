@@ -158,46 +158,54 @@
     cursor: pointer;
 }
 
+
+
 .cart_container{
-   text-align: left;
-}
-.cart_container > div:nth-child(1) > h1 {
-    color: #171A29;
-    margin-bottom: 0;
-}
-.cart_container > div:nth-child(1) > p{
-    margin-top: 0;
-}
-.cart__card{
-    display: flex;
-    padding: 10px 0;
-    justify-content: space-between;
-    padding-right: 10%;
-    border-bottom: 1px solid lightgray;
-}
+    text-align: left;
+ }
+ .cart_container > div:nth-child(1) > h1 {
+     color: #171A29;
+     margin-bottom: 0;
+ }
+ .cart_container > div:nth-child(1) > p{
+     margin-top: 0;
+ }
+ .cart__card{
+     display: flex;
+     padding: 10px 0;
+     justify-content: space-between;
+     padding-right: 10%;
+     border-bottom: 1px solid lightgray;
+ }
+ 
+ 
+ .total_box{
+     color: #171A29;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-right: 10%;
+ }
+ 
+ .total_box > h3 {
+     color: #171A29;
+ }
+ 
+ .checkOutBox  button{
+     background-color: #60B246;
+     color: #fff;
+     width: 90%;
+     border: none;
+     outline: none;
+     padding: 10px;
+     font-weight: 600;
+     cursor: pointer;
+ }
+ 
+ 
 
 
-.total_box{
-    color: #171A29;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 10%;
-}
 
-.total_box > h3 {
-    color: #171A29;
-}
-
-.checkOutBox > button{
-    background-color: #60B246;
-    color: #fff;
-    width: 90%;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-weight: 600;
-}
 
 
 

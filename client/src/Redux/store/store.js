@@ -8,7 +8,8 @@ import { showLoginReducer } from '../ForLogin/reducer'
 import { showSignReducer } from '../ForSignup/reducer'
 import {userReducer} from '../UserData/reducer'
 import { locateReducer } from '../Location/reducer'
-import { totalReducer } from '../Total/reducer'
+import { SubTotalReducer } from '../Total/reducer'
+import { getAddressReducer, showAddressReducer } from '../ForAddress.js/reducer'
 
 const rootReducer = combineReducers({
     productState : productReducer,
@@ -19,7 +20,9 @@ const rootReducer = combineReducers({
     showSignState : showSignReducer,
     userState : userReducer,
     locateState : locateReducer,
-    totalState : totalReducer
+    subTotalState : SubTotalReducer,
+    showAddressState : showAddressReducer,
+    myAddressState : getAddressReducer
 })
 
 

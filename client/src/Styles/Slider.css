@@ -12,6 +12,7 @@
 }
 .item > img{
     height: 85%;
+    margin: 10px;
 }
 .item > img:hover{
     height: 88%;

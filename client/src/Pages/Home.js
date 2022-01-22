@@ -40,7 +40,7 @@ const Home = () => {
                 <Slider imgs="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/tgnvusbs3fnzz7xupeno"/>
                 <Slider imgs="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ehchczipeejs7qrk82u6"/>
             </Carousel>
-            
+
             <Products />
             <RestaurentProducts />
         </>

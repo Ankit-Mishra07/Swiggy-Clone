@@ -1,0 +1,381 @@
+.footer{
+    padding: 0 100px;
+    background-color: #000;
+    min-height: 298px;
+    width: 100%;
+    color: #fff;
+  }
+  .footer{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    margin-left: 5%;
+  }
+  .container{
+    background-color: #000;
+  }
+  .store>a>img{
+     width: 65%;
+     margin-top: 15%;
+     margin-bottom: -7%;
+  }
+  .mid_foot{
+    padding: 0 100px;
+    background-color: #000;
+    min-height: 298px;
+    width: 100%;
+    color: #fff;
+  }
+  .mid_foot{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    margin-left: 5%;
+  }
+  .horizental_line{
+    border-bottom: 1px solid gray;
+    margin-left: 10%;
+    width: 73%;
+    margin-top: 3%;
+    background-color: black;
+  }
+  
+  .horizental_line2{
+    border-bottom: 1px solid gray;
+    margin-left: 10%;
+    width: 73%;
+    margin-top: 5%;
+    background-color: black;
+  }
+  .bottom_foot{
+    display: grid;
+    margin-left: 10%;
+    margin-top: 2%;
+    grid-template-columns: 30% 30% 30%;
+  }
+  
+  .bottom_foot>div:nth-child(1)>img{
+    width: 30%;
+  }
+  .bottom_foot>div:nth-child(3){
+     display: grid;
+     grid-template-columns: 20% 20% 20% 20%;
+  }
+  
+  .bottom_foot>div:nth-child(3)>div>a>img{
+    width: 35%;
+  }
+  .empty_cart{
+       text-align: center;
+  }
+  .empty_cart>div{
+    text-align: center;
+    margin: auto;
+  
+  }
+  .empty_cart>div>img{
+  width: 25%;
+  
+  }
+  .empty_cart>div{
+    margin-top: 5%;
+  }
+  .empty_cart>div>p{
+   font-size: 12px;
+   margin-top: 0%;
+   color: #535665;
+   margin-bottom: 3%;
+  }
+  
+  .empty_cart>div>h3{
+  color: #535665;
+  }
+  .empty_cart>div>span{
+    color: white;
+    background-color: #fc8019;
+    border-radius: none;
+    padding: 7px 7px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .empty_cart>div{
+    margin-bottom: 15%;
+  }
+  .mid_part{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #e9ecee;
+  }
+  .mid_part>div>img{
+  width: 40%;
+  }
+  .mid_part>div>p{
+    font-size: 15px;
+    color: #535665;
+    margin-top: -1%;
+  }
+  .mid_part>div>h1{
+    color: #535665;
+  }
+  
+  .mid_one{
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 200px 200px 120px 120px;
+    margin-bottom: 10%;
+  }
+  .mid_one>div{
+    margin-top: 3%;
+    margin-left: 10%;
+    background-color: white;
+  }
+  .mid_one>div>p{
+    font-size: 15px;
+    color: #535665;
+    margin-top: -3%;
+    margin-left: 5%;
+  }
+  
+  .mid_one>div>h1{
+   margin-left: 5%;
+  }
+  .mid_one>div>span{
+    color: white;
+    background-color: #fc8019;
+    border-radius: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5%;
+  }
+  
+   .login{
+    color: green;
+    text-align: center;
+    border: 1px solid green;
+    padding: 0px 0px;
+    font-size: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5%;
+    width: 30%;
+  }
+  .login>p{
+    font-size: 15px;
+  }
+  .login>h4{
+    margin-top: 5%;
+  }
+  
+  .signup{
+    color: white;
+    text-align: center;
+    border: 1px solid green;
+    background-color: green;
+    padding: 0px 0px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5%;
+    width: 30%;
+    
+  }
+  .signup>p{
+    font-size: 7px;
+  }
+  .signup>h4{
+    margin-top: -5%;
+  }
+  .btn{
+    display: grid;
+    grid-template-columns: 100% 100%;
+  }
+  .btn>div:nth-child(2){
+      margin-left: -50%;
+  }
+  
+  .Dp{
+    color: #535665;
+    margin-left: 10%;
+  } 
+  
+  
+  .item_part{
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 60% 25%;
+    background-color: #e9ecee;
+  }
+  .item_part>div>img{
+  width: 40%;
+  }
+  .item_part>div>p{
+    font-size: 9px;
+    color: #535665;
+    margin-top: -1%;
+  }
+  .item_part>div>h3{
+    color: #535665;
+  }
+  
+  .item_one{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 120px 120px;
+    margin-bottom: 10%;
+  }
+  .item_one>div{
+    margin-top: 3%;
+    margin-left: 20%;
+    background-color: white;
+  }
+  .item_one>div>p{
+    font-size: 15px;
+    color: #535665;
+    margin-top: -3%;
+    margin-left: 5%;
+  }
+  
+  .item_one>div>h1{
+   /* margin-left: 5%; */
+  }
+  .item_one>div>span{
+    color: white;
+    background-color: #fc8019;
+    border-radius: none;
+    padding: 5px 15px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5%;
+  }
+  
+  .login{
+    color: green;
+    text-align: center;
+    border: 1px solid green;
+    padding: 0px 0px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5%;
+    width: 30%;
+  }
+  .login>p{
+    font-size: 12px;
+  }
+  .login>h1{
+    margin-top: -5%;
+  }
+  
+  .signup{
+    color: white;
+    text-align: center;
+    border: 1px solid green;
+    background-color: green;
+    padding: 0px 0px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5%;
+    width: 30%;
+    
+  }
+  .signup>p{
+    font-size: 12px;
+  }
+  .signup>h1{
+    margin-top: -5%;
+  }
+  .btn{
+    display: grid;
+    grid-template-columns: 100% 100%;
+  }
+  .btn>div:nth-child(2){
+      margin-left: -50%;
+  }
+  
+  .Dp{
+    color: #535665;
+    margin-left: 10%;
+    cursor: pointer;
+  }
+  
+  .item_part>div:nth-child(2){
+  background-color: white;
+  margin-top: 7%;
+  }
+  
+  .resName{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    gap: 5%;
+    
+  }
+  
+  .resName>div{
+    margin-left: 30%;
+    margin-top: 30%;
+    
+  }
+  .resName>div>img{
+    width: 100%;
+  }
+  
+  .resName>div>p{
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: -30%;
+    margin-left: -40%;
+  }
+  
+  .quantity{
+    display: grid;
+    grid-template-columns: 200% 200% 200%;
+    margin-top: -400%;
+  
+  }
+  .quantity>div{
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+  
+  .incdec{
+    display: grid;
+    grid-template-columns: 40% 40% 40%;
+    border: 1px solid green;
+    cursor: pointer;
+  }
+  .sugg{
+    margin-top: 70%;
+    width: 80%;
+    height: 20px;
+  }
+  .total{
+    width: 200%;
+  }
+
+  .loggedFirstChild > h3, .loggedFirstChild > h1{
+    text-align: left;
+  }
+
+  .toPay__Box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  .myAddressSectionH  > h4 {
+   text-align: left;
+   margin: 5px;
+   margin-left: 0;
+   overflow: hidden;
+  }
+
+
+  .changeBtn_ {
+    border : 1px solid green;
+     background-color : #fff;
+    float: left;
+    color: green;
+    cursor: pointer;
+    }

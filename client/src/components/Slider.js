@@ -1,3 +1,4 @@
+// import react from "react";
 import "../Styles/Slider.css";
 // import styled from "styled-components";
 
