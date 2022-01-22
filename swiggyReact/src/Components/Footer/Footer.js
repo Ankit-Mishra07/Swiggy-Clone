@@ -4,7 +4,7 @@ import './Footer.css'
 import Text from './Text/Text.js'
 import cities,{companies,contacts,legals} from './Arrays.js'
 import Image from '../Restaurants/Image/Image'
-import swiggyimg from '../../Images/Swiggy.png'
+// import swiggyimg from '../../Images/Swiggy.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {faFacebookF} from '@fortawesome/free-solid-svg-icons'
