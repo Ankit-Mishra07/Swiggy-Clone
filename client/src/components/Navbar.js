@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { userDataaction } from "../Redux/UserData/action";
 import style from "../Styles/Navbar.module.css";
+
 
 export const Navbar = () => {
 
@@ -39,7 +40,7 @@ export const Navbar = () => {
             </div>
 }
             </span></i>
-            <i class="fas fa-shopping-cart"><span className="spann">Cart</span></i>
+            <i class="fas fa-shopping-cart"><Link className="spann" style={{color : "inherit", textDecoration: 'none'}} to="/checkout">Cart</Link></i>
         </div>
     </div>
 
