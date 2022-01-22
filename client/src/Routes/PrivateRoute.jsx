@@ -6,7 +6,7 @@ const PrivateRoute = ({children}) => {
 
     const {userData} = useSelector(state => state.userState)
 
-    if(userData.length  === 0 || userData[0] === null) {
+    if(userData[0] === null) {
        return <Navigate to="/" />
     }
 

@@ -10,6 +10,7 @@ import {userReducer} from '../UserData/reducer'
 import { locateReducer } from '../Location/reducer'
 import { SubTotalReducer } from '../Total/reducer'
 import { getAddressReducer, showAddressReducer } from '../ForAddress.js/reducer'
+import { categoryReducer } from '../CategoryData/reducer'
 
 const rootReducer = combineReducers({
     productState : productReducer,
@@ -22,7 +23,8 @@ const rootReducer = combineReducers({
     locateState : locateReducer,
     subTotalState : SubTotalReducer,
     showAddressState : showAddressReducer,
-    myAddressState : getAddressReducer
+    myAddressState : getAddressReducer,
+    categoryDataState : categoryReducer
 })
 
 

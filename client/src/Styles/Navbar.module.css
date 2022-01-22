@@ -57,3 +57,28 @@ i:hover{
     font-size: 24px;
     color: coral;
 }
+
+.forLogoutBox{
+    background-color: #fff;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 60px;
+    width: 15%;
+    right: 14%;
+    height: 200px;
+    z-index: 999;
+    border-top: 4px solid #FC8019;
+    text-align: left;
+    font-weight: 500;
+    line-height: 40px;
+
+}
+
+.forLogoutBox> div {
+    cursor: pointer;
+    margin-left: 10%;
+
+}
+.forLogoutBox> div:hover {
+    color: #000;
+}

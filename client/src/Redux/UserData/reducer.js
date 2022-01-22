@@ -1,7 +1,7 @@
 import { GetData, saveData } from "../utils/localstorage"
 import { USER_DATA } from "./actionType"
 const init = {
-    userData : GetData('swiggy_user') || []
+    userData : GetData('swiggy_user') || [null]
 }
 
 

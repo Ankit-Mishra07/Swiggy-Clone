@@ -7,13 +7,16 @@ import {useSelector, useDispatch} from 'react-redux'
 import { addToCart } from '../Redux/Cart/action';
 import { subTotal } from '../Redux/Total/action';
 import { Link } from 'react-router-dom';
+import { getcategoryData } from '../Redux/CategoryData/action';
 const ProductDetail = () => {
   const {id} = useParams()
   const [data, setData]= useState({})
-  const [lists, setLists] = useState([])
+  // const [lists, setLists] = useState([])
   const [veg , setVeg] = useState(false)
   const {cart} = useSelector(state => state.cartState)
   const dispatch = useDispatch()
+
+  const {lists} = useSelector(state => state.categoryDataState)
 
 
   const getData = async() => {
@@ -26,16 +29,13 @@ const ProductDetail = () => {
   const getByCat = async () => {
     let res = await fetch(`http://localhost:5000/products/?category=${data.category}`)
     let dat = await res.json()
-    setLists(dat)
+    // setLists(dat)
+    dispatch(getcategoryData(dat))
     
   }
-  useEffect(() => {
-    getByCat() 
-},[])
+
   
-  useEffect(() => {
-      getData()
-  },[])
+
 
 
 
@@ -50,9 +50,12 @@ const handlevege = () =>  {
       return e.veg === true
     })
 
-    setLists(updated)
+    // setLists(updated)
+    dispatch(getcategoryData(updated))
     setVeg(true)
 }
+
+
 
 
 const AddtoCart = (e) => {
@@ -76,6 +79,7 @@ const AddtoCart = (e) => {
 
 
 
+
 const getCartData = async () => {
   let res = await fetch('http://localhost:5000/cart')
   let dat = await res.json()
@@ -86,10 +90,23 @@ const getCartData = async () => {
 
   dispatch(addToCart(userCart))
 }
+
+
+
+
+useEffect(() => {
+  getByCat() 
+},[])
+
+useEffect(() => {
+  getData()
+},[])
 useEffect(() => {
   getCartData()
 },[])
 
+
+console.log(lists)
 
   return <>
 

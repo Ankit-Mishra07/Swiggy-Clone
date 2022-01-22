@@ -37,6 +37,8 @@ const Checkout = () => {
 
   {cat && <ItemCart /> }
     </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <CompleteFooter />
   </div>;
 };

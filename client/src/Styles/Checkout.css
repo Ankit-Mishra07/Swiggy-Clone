@@ -10,7 +10,7 @@
     grid-template-columns: 20% 20% 20% 20%;
     margin-left: 5%;
   }
-  .container{
+  .containerrr{
     background-color: #000;
   }
   .store>a>img{
@@ -379,3 +379,47 @@
     color: green;
     cursor: pointer;
     }
+.payment__Box{
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.payment__method{
+  background-color: #EDF1F7;
+  text-align: left;
+  margin-left: 5%;
+
+}
+
+.payment__method > div {
+  padding: 20px 10px;
+  color: #535665;
+  cursor: pointer;
+  font-weight: 600;
+}
+.payment__method > div:hover {
+  color: #000;
+}
+
+.payment__payondelivery{
+  text-align: left;
+  padding-left: 20px;
+}
+
+.payment__payondelivery > p , 
+.payment__payondelivery >h3 {
+  color: #535665;
+}
+
+.paybtnfinal{
+  background-color: #60B246;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  width: 70%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+

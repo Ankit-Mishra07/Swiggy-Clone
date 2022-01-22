@@ -7,7 +7,7 @@ import BottomFoot from './BottomFoot';
 const CompleteFooter = () => {
     return (
       <>
-        <div className='container'>
+        <div className='containerrr'>
         <Footer/>
         <div style={{backgroundColor:'black'}}>
         <div className='horizental_line'></div>

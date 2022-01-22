@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { showLogin } from '../../Redux/ForLogin/action';
 import { showSignup } from '../../Redux/ForSignup/action';
@@ -17,6 +17,9 @@ const Login = () => {
         dispatch(showLogin(false))
     }
 
+    useEffect(() => {
+        dispatch(userDataaction(null))
+    },[])
     const Loginfn = () => {
         if(text.length !== 10) {
             swal('Please!' , 'Enter Valid Phone Number', 'warning')
