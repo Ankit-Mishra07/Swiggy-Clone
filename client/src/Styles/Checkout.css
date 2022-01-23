@@ -196,7 +196,7 @@
   
   .Dp{
     color: #535665;
-    margin-left: 10%;
+    /* margin-left: 10%; */
   } 
   
   
@@ -205,6 +205,7 @@
     gap: 2%;
     grid-template-columns: 60% 25%;
     background-color: #e9ecee;
+    height: 800px;
   }
   .item_part>div>img{
   width: 40%;
@@ -221,7 +222,7 @@
   .item_one{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 120px 120px;
+    grid-template-rows: 200px 200px 120px;
     margin-bottom: 10%;
   }
   .item_one>div{
@@ -368,7 +369,8 @@
    text-align: left;
    margin: 5px;
    margin-left: 0;
-   overflow: hidden;
+   overflow-x:auto ;
+   line-height: 30px;
   }
 
 

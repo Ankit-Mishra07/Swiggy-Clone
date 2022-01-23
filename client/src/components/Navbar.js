@@ -15,7 +15,7 @@ export const Navbar = () => {
     const navigate = useNavigate()
    const handleLogout = () => {
        dispatch(userDataaction(null))
-       navigate("/login")
+       navigate("/")
    }
     
     return (

@@ -19,7 +19,7 @@ export default function Buttonsdiv() {
 
     return (
         <div className="btndiv">
-            <div style={{cursor: "pointer"}} className="login" onClick={showLoginSide}>Login</div>
+            <div style={{cursor: "pointer"}} className="loginn" onClick={showLoginSide}>Login</div>
             <Button btncls="blackbtn" btntext="Sign up"/>
         </div>
     )

@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.login{
+.loginn{
     background-color: #ffffff;
     padding: 10px 20px;
     color: #000000;
@@ -11,6 +11,6 @@
     font-weight: 550;
     font-size: 1.1em;
 }
-.login:hover{
+.loginn:hover{
     color: #fc8019;
 }

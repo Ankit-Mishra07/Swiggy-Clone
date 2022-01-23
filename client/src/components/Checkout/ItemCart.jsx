@@ -69,7 +69,7 @@ const dispatch = useDispatch()
                     }}>Add a delivery address</h1> }
 
                     {myAddress.length > 0 &&  
-                    <div className="myAddressSectionH Dp">
+                    <div className="myAddressSectionH Dp" style={{marginLeft : "10px", height : "fit-content", backgroundColor : "#ffff"}}>
                       {/* <h1>Delivery Address</h1> */}
                      <h4>Address : {myAddress[0].address}</h4> 
                      <h4>Door/Flat No. : {myAddress[0].flatno}</h4>
@@ -81,7 +81,7 @@ const dispatch = useDispatch()
                     }
                     <Address />
                 </div>
-                <div style={{height : "500px"}}>
+                <div style={{height : "400px"}}>
                 <h1 className='Dp'>Choose payment method</h1>
                 {
                   myAddress.length > 0 && <div className='payment__Box'>

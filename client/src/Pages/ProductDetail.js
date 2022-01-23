@@ -16,6 +16,8 @@ const ProductDetail = () => {
   const {cart} = useSelector(state => state.cartState)
   const dispatch = useDispatch()
 
+  const [forState, setForState] = useState(false)
+
   const {lists} = useSelector(state => state.categoryDataState)
 
 
@@ -23,6 +25,7 @@ const ProductDetail = () => {
     let res = await fetch(`http://localhost:5000/products/${id}`)
     let dat = await res.json()
     setData(dat)
+    // getByCat()
   }
   
   
@@ -74,7 +77,7 @@ const AddtoCart = (e) => {
 
     getCartData()
   })
-  console.log(e)
+  // console.log(e)
 }
 
 
@@ -89,14 +92,19 @@ const getCartData = async () => {
 
 
   dispatch(addToCart(userCart))
+  // getByCat()
 }
+
+
+
+
 
 
 
 
 useEffect(() => {
   getByCat() 
-},[])
+},[lists])
 
 useEffect(() => {
   getData()
@@ -104,6 +112,11 @@ useEffect(() => {
 useEffect(() => {
   getCartData()
 },[])
+
+
+// useEffect(() => {
+//   setForState(true)
+// },[])
 
 
 console.log(lists)
@@ -135,12 +148,12 @@ console.log(lists)
               </div>
               <div onClick={handlevege} style={{color : veg && "#60B246"}}>Veg Only</div>
               <div>
-              <i class="far fa-heart"></i><span>Favourite</span>
+              <i class="far fa-heart"></i><span >Favourite</span>
               </div>
             
             </div>
 
-            <h1 className={style.headof_bottom}>{data.category}</h1>
+            <h1 className={style.headof_bottom} >{data.category}</h1>
 
             <div>
 

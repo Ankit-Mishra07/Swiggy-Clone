@@ -1,21 +1,24 @@
 .item{
     width: 100%;
-    height: 420px;
-    background-color: black;
+    height: 380px;
+    background-color: #171A29;
     color: #fff;
     /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .item > img{
-    height: 85%;
+    height: 75%;
     margin: 10px;
+
+    transition: transform 0.9s;
 }
 .item > img:hover{
-    height: 88%;
+    transform: scale(1.05);
+    /* height: 85%; */
     cursor: pointer;
-    transition: all .2s ease;
+    /* transition: all .2s ease; */
 }
