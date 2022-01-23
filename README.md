@@ -64,7 +64,7 @@ Just fork it and you are good to go.
 
 ## Authors
 
-👤 **Ankit Mishra
+👤 **Ankit Mishra**
 
 - Github: [@Ankit Mishra](https://github.com/Ankit-Mishra07)
 - Linkedin: [Ankit Mishra](https://www.linkedin.com/in/ankit-mishra07/)
