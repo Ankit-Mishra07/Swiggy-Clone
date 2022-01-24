@@ -82,10 +82,16 @@ Just fork it and you are good to go.
 - Linkedin: [Vipul Chodhari](http://www.linkedin.com/in/vipul-chodhari)
 - Email: (@gmail.com)
 
-👤 Surendra Yadav
+👤 **Surendra Yadav**
 
 - Github: [@Surendra Yadav](https://github.com/Surendra9129)
 - Linkedin: [Surendra Yadav](https://www.linkedin.com/in/surendra-yadav-75812b1a1/)
+- Email: (surendrayadav91296@gmail.com)
+- 
+- 👤 **Amar Jyoti Patra**
+
+- Github: [@SAmar Jyoti Patra](http://www.github.com/amarjyotipatra)
+- Linkedin: [Amar Jyoti Patrav](https://www.linkedin.com/in/amar-jyoti-patra-28a610207/)
 - Email: (surendrayadav91296@gmail.com)
 
 ## 🤝 Contributing
