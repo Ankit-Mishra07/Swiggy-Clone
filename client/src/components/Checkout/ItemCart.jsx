@@ -20,7 +20,7 @@ const ItemCart = () => {
 
 const dispatch = useDispatch()
   const getCartData = async () => {
-    let res = await fetch('http://localhost:5000/cart')
+    let res = await fetch('https://fast-woodland-46270.herokuapp.com/cart')
     let dat = await res.json()
     let userCart = dat.filter((e) => {
       return userData[0]._id === e.user
@@ -35,7 +35,7 @@ const dispatch = useDispatch()
     swal('Thank You!', 'Ordered Successfully', 'success')
 
     for(let i = 0 ; i < cart.length; i++) {
-      fetch(`http://localhost:5000/cart/${cart[i]._id}`, {
+      fetch(`https://fast-woodland-46270.herokuapp.com/cart/${cart[i]._id}`, {
         method : 'DELETE',
         headers : {
           'Content-Type' : 'application/json'

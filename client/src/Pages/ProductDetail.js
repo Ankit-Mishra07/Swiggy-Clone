@@ -22,7 +22,7 @@ const ProductDetail = () => {
 
 
   const getData = async() => {
-    let res = await fetch(`http://localhost:5000/products/${id}`)
+    let res = await fetch(`https://fast-woodland-46270.herokuapp.com/products/${id}`)
     let dat = await res.json()
     setData(dat)
     // getByCat()
@@ -30,7 +30,7 @@ const ProductDetail = () => {
   
   
   const getByCat = async () => {
-    let res = await fetch(`http://localhost:5000/products/?category=${data.category}`)
+    let res = await fetch(`https://fast-woodland-46270.herokuapp.com/products/?category=${data.category}`)
     let dat = await res.json()
     // setLists(dat)
     dispatch(getcategoryData(dat))
@@ -64,7 +64,7 @@ const handlevege = () =>  {
 const AddtoCart = (e) => {
   delete e._id;
   e["user"] = userData[0]._id
-  fetch('http://localhost:5000/cart', {
+  fetch('https://fast-woodland-46270.herokuapp.com/cart', {
     method : 'POST',
     body : JSON.stringify(e),
     headers : {
@@ -84,7 +84,7 @@ const AddtoCart = (e) => {
 
 
 const getCartData = async () => {
-  let res = await fetch('http://localhost:5000/cart')
+  let res = await fetch('https://fast-woodland-46270.herokuapp.com/cart')
   let dat = await res.json()
   let userCart = dat.filter((e) => {
     return userData[0]._id === e.user

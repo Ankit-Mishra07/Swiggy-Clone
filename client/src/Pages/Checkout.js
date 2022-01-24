@@ -11,7 +11,7 @@ const Checkout = () => {
   const [cat, setcat] = useState(false)
 
   const getCartData = async() => {
-    let res = await fetch('http://localhost:5000/cart')
+    let res = await fetch('https://fast-woodland-46270.herokuapp.com/cart')
     let dat = await res.json()
     if(dat.length !== 0) {
       setcat(true)

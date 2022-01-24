@@ -42,7 +42,7 @@ const Signup = () => {
             swal("Please!", "Provide Strong Password Should not contain character less than 6!", "warning");
             return
         }
-        fetch("http://localhost:5000/user/register", {
+        fetch("https://fast-woodland-46270.herokuapp.com/user/register", {
             method : 'POST',
             body : JSON.stringify(form),
             headers : {

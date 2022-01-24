@@ -29,7 +29,7 @@ const Login = () => {
         let payload = {
             mobile : Number(text)
         }
-        fetch('http://localhost:5000/login', {
+        fetch('https://fast-woodland-46270.herokuapp.com/login', {
             method : 'POST',
             body : JSON.stringify(payload),
             headers : {

@@ -11,7 +11,7 @@ const Home = () => {
     const {products} = useSelector(state => state.productState)
     const dispatch = useDispatch()
     const getProducts = async() => {
-        let res = await fetch('http://localhost:5000/products')
+        let res = await fetch('https://fast-woodland-46270.herokuapp.com/products')
         let data = await res.json()
         dispatch(getAllProducts(data))
     }
