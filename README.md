@@ -80,7 +80,7 @@ Just fork it and you are good to go.
 
 - Github: [@Vipul Chodhari](https://github.com/Vipchoudhary13)
 - Linkedin: [Vipul Chodhari](http://www.linkedin.com/in/vipul-chodhari)
-- Email: (@gmail.com)
+- Email: (vipulchoudhary1995@gmail.com)
 
 👤 **Surendra Yadav**
 
