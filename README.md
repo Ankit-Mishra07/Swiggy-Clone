@@ -87,7 +87,7 @@ Just fork it and you are good to go.
 - Github: [@Surendra Yadav](https://github.com/Surendra9129)
 - Linkedin: [Surendra Yadav](https://www.linkedin.com/in/surendra-yadav-75812b1a1/)
 - Email: (surendrayadav91296@gmail.com)
-- 
+
 - 👤 **Amar Jyoti Patra**
 
 - Github: [@SAmar Jyoti Patra](http://www.github.com/amarjyotipatra)
