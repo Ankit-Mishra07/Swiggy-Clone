@@ -22,7 +22,7 @@ const ProductDetail = () => {
 
 
   const getData = async() => {
-    let res = await fetch(`https://fast-woodland-46270.herokuapp.com/products/${id}`)
+    let res = await fetch(`https://swiggy-server.onrender.com/products/${id}`)
     let dat = await res.json()
     setData(dat)
     // getByCat()
@@ -30,7 +30,7 @@ const ProductDetail = () => {
   
   
   const getByCat = async () => {
-    let res = await fetch(`https://fast-woodland-46270.herokuapp.com/products/?category=${data.category}`)
+    let res = await fetch(`https://swiggy-server.onrender.com/products/?category=${data.category}`)
     let dat = await res.json()
     // setLists(dat)
     dispatch(getcategoryData(dat))
@@ -64,7 +64,7 @@ const handlevege = () =>  {
 const AddtoCart = (e) => {
   delete e._id;
   e["user"] = userData[0]._id
-  fetch('https://fast-woodland-46270.herokuapp.com/cart', {
+  fetch('https://swiggy-server.onrender.com/cart', {
     method : 'POST',
     body : JSON.stringify(e),
     headers : {
@@ -84,7 +84,7 @@ const AddtoCart = (e) => {
 
 
 const getCartData = async () => {
-  let res = await fetch('https://fast-woodland-46270.herokuapp.com/cart')
+  let res = await fetch('https://swiggy-server.onrender.com/cart')
   let dat = await res.json()
   let userCart = dat.filter((e) => {
     return userData[0]._id === e.user

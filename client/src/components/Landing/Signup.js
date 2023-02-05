@@ -42,7 +42,7 @@ const Signup = () => {
             swal("Please!", "Provide Strong Password Should not contain character less than 6!", "warning");
             return
         }
-        fetch("https://fast-woodland-46270.herokuapp.com/user/register", {
+        fetch("https://swiggy-server.onrender.com/user/register", {
             method : 'POST',
             body : JSON.stringify(form),
             headers : {

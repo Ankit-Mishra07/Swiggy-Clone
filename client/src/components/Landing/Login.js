@@ -29,7 +29,7 @@ const Login = () => {
         let payload = {
             mobile : Number(text)
         }
-        fetch('https://fast-woodland-46270.herokuapp.com/login', {
+        fetch('https://swiggy-server.onrender.com/login', {
             method : 'POST',
             body : JSON.stringify(payload),
             headers : {
